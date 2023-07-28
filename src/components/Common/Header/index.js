@@ -18,7 +18,7 @@ const Header = (props) =>{
 
 
                 <NavLink to="/">
-                <p className="link">Home</p>
+                <p className="link">Home Page</p>
                 </NavLink>
                 <NavLink to="/compare">
                 <p className="link">Compare</p>
