@@ -5,11 +5,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 3rem;
-    background-color: var(--black);
+    padding: 0.5rem 5rem;
+    background-color: var(--darkpurple);
   }
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .links {
     display: flex;

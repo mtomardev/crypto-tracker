@@ -1,13 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import './styles.css'
 import { Home } from "@mui/icons-material";
 import Button from "./../../Common/Button/index";
 import iphone from "../../../assets/iphone.png";
 import gradient from "../../../assets/gradient.png";
 import {motion} from "framer-motion"
+import { Link } from "react-router-dom";
+import ShareComponent from "../ShareComponent";
 
 
 const LandingPage = () =>{
+    const [open, setOpen] = useState(false)
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+    
     return(
         <div className="InfoComponent">
             <div className="leftComponent">
@@ -29,8 +35,15 @@ const LandingPage = () =>{
                 transition={{duration: 0.5, delay: 0.5}}
                 >Track crypto through a public api in real time. Visit the dashboard to do so!</motion.p>
                 <div className="btn-flx">
-                <Button text={"Dashboard"}/>
-                <Button text={"Share"} outline={true}/>
+                <Link to="/dashboard">
+                    <Button text={"Dashboard"}/>
+                </Link>
+                
+                
+                <Button text={"Share"} outline={true} onClick={handleOpen} />
+                <ShareComponent open={open} 
+                       handleOpen={handleOpen} 
+                       handleClose={handleClose}/>
                 </div>
             </div>
 
