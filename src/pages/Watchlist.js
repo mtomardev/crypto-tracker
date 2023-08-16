@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Button from "../components/Common/Button";
 import Header from "../components/Common/Header";
-import TabsComponent from './../components/Dashboard/Tabs/index';
-import { get100Coins } from './../functions/get100Coins';
+import TabsComponent from '../components/Dashboard/Tabs/index';
+import { get100Coins } from '../functions/get100Coins';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -29,7 +29,7 @@ function Watchlist() {
 
   return (
     <div>
-      
+      <Header />
       {watchlist?.length > 0 ? (
         <>
          <TabsComponent coins={coins} />

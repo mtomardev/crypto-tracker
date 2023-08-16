@@ -1,80 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/* background-color: #042743; */
-/* #1b1b1b */
-:root{
-  --white : #fff;
-  --black : #111;
-  --blush : #FE828C;
-  --blue : #3a80e9;
-  --grey : #888;
-  --darkgrey : #1b1b1b;
-  --green : #61c96f;
-  --red : #f94141;
+:root {
+  --white: #fff;
+  --black: #111;
+  --blue: #3a80e9;
+  --grey: #888;
+  --darkgrey: #1b1b1b;
+  --green: #61c96f;
+  --red: #f94141;
 }
-
+[data-theme="light"] {
+  --white: #111;
+  --black:  #fff;
+  --blue: #3a80e9;
+  --grey: #888;
+  --darkgrey: #dbd7d7;
+  --green: #43c655;
+  --red: #f94141;
+}
+*{
+  
+  transition:  all .3s ease-in-out;
+}
 html{
   scroll-behavior: smooth;
 }
-
 body {
-  /* height: 200vh; */
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Inter', sans-serif;
   background-color: var(--black);
   color: var(--white);
+  font-family: "Inter", sans-serif;
+  /* height: 200vh; */
 }
-
-::selection{
-  background-color: var(--red);
+::selection {
+  background-color: var(--blue);
   color: var(--white);
 }
 
-
-/* width */
+/* width of scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.3rem;
 }
-
-/* Track */
+/* track of scrollbar */
 ::-webkit-scrollbar-track {
-  background: var(--white)
+  background: var(--black);
 }
-
-/* Handle */
+/* handle of scrollbar */
 ::-webkit-scrollbar-thumb {
-  background: var(--green);
+  background: var(--blue);
+  border-radius: 3rem;
 }
 
-a{
-  color: var(--white) !important; 
-  text-decoration: none !important;
+a {
+  color: var(--white) !important;
+  text-decoration: none;
 }
-
 img {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  }
+}
+.grey-wrapper{
+  display: block;
+  width: 90%;
+  background-color: var(--darkgrey);
+  margin: 1.5rem auto;
+  border-radius: .8rem;
+  padding: 1rem 1rem;
+}
+.coins-days-flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem;
+  gap: 1rem;
+  
+}
 
-  .grey-wrapper{
-    display: block;
-    width: 90%;
-    background-color: var(--darkgrey);
-    margin: 1.5rem auto;
-    border-radius: 1rem ;
-    padding: 0.25rem 1rem;
-    
+@media screen and (max-width: 550px) {
+  .css-5jvgi7 { 
+width: 3.3rem !important;
+height: 2.5rem !important;
   }
-
-  .coins-days-flex{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1.5rem;
-    gap: 2rem;
-  }
-
+  .css-19kzrtu {
+    padding: 7px !important;
+}
+}

@@ -1,30 +1,29 @@
-import React, { useState } from 'react'
-import './styles.css'
-import { color } from 'framer-motion'
+import React from "react";
+import "./styles.css";
+import { useState } from "react";
 
-function CoinInfo({heading, desc}) {
+const Coininfo = ({ heading, desc }) => {
+  const shortDesc =
+    desc.slice(0, 350) + "<span style='color:var(--grey)'> Read More...</span>";
+  const longDesc =
+    desc + "<span style='color:var(--grey)'> Read Less...</span>";
 
-    const shortDesc = desc.slice(0,350) + 
-    "<span style= 'color: var(--grey); cursor: pointer; '> Read more...</span>"
-    const longDec = desc  + 
-    "<span style= 'color: var(--grey); cursor: pointer; '> Read Less...</span>";
-    const [flag, setFlag] = useState()
+  const [flag, setFlag] = useState(false);
 
-    return (
-    <div className='grey-wrapper' style={{ padding: "0rem .5rem" }}>
-        <h2 className='coin-info-heading'>{heading}</h2>
-        {/* <p className='coin-info-desc'>{desc}</p> */}
-        {desc.length > 350 ?
-(          <p onClick={() => setFlag(!flag)} className='coin-info-desc' 
-        dangerouslySetInnerHTML={{__html:!flag ? shortDesc :longDec }}
+  return (
+    <div className="grey-wrapper">
+      <h2 className="coin-info-heading">{heading}</h2>
+      {desc.length > 350 ? (
+        <p
+          onClick={() => setFlag(!flag)}
+          className="coin-info-desc"
+          dangerouslySetInnerHTML={{ __html: !flag ? shortDesc : longDesc }}
         />
-        ) : (
-          <p dangerouslySetInnerHTML={{__html : desc}} />
-        ) }
-      
+      ) : (
+        <p dangerouslySetInnerHTML={{ __html: desc }} />
+      )}
     </div>
-  )
-}
+  );
+};
 
-
-export default CoinInfo
+export default Coininfo;

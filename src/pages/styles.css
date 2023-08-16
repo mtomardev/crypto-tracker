@@ -1,0 +1,31 @@
+.no-item-found-info{
+    display: flex;
+    justify-content: center;
+}
+
+.clearSearch-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearSearch-flex p{
+    background-color: var(--blue);
+    border-radius: 2rem;
+    height: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-top: 15px;
+    
+}
+
+.coins-days-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.5rem;
+    gap: 2rem;
+}

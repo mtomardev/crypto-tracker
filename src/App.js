@@ -1,44 +1,24 @@
+import {BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css';
-import { BrowserRouter ,Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
-import CoinPage from './pages/Coin';
-import ComparePage from './pages/ComparePage';
-import Watchlist from './pages/Watchlist';
-import Header from './components/Common/Header';
-import React,{useState} from 'react';
+
+import HomePage from "./pages/HomePage";
+import DashboardPage from "./pages/Dashboard";
+import CoinPage from "./pages/Coin";
+import ComparePage from "./pages/ComparePage";
+import Watchlist from "./pages/Watchlist";
 
 function App() {
-  let [mode, setMode] = useState('light')
-
-  let toggleMode = () =>{
-    if(mode === 'light'){
-      setMode('dark')
-      document.body.style.backgroundColor = "#042743"
-      document.body.style.color = "white"
-    }
-    else{
-      setMode('light')
-      document.body.style.backgroundColor = "black"
-      document.body.style.color = "white"
-    }
-  }
-
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
-      <Header mode={mode} toggleMode = {toggleMode}/>
       <Routes>
-        <Route path='/' element = {<Home/>} ></Route>
-        <Route path='/dashboard' element = {<Dashboard/>} ></Route>
-        <Route path='/coin/:id' element = {<CoinPage/>} ></Route>
-        <Route path='/compare' element = {<ComparePage/>} ></Route>
-        <Route path='/watchlist' element = {<Watchlist/>} ></Route>
-
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/coin/:id" element={<CoinPage />} />
+        <Route path="/compare" element={<ComparePage />} />
+        <Route path="/watchlist" element={<Watchlist />} />
       </Routes>
       </BrowserRouter>
-
-    
     </div>
   );
 }

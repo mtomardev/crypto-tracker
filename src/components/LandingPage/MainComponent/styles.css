@@ -1,0 +1,89 @@
+.InfoComponent{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 5rem;
+}
+
+.Track-Crypto-heading, .Real-Time-heading{
+    margin: 0;
+    font-size: 5rem;
+}
+
+.Track-Crypto-heading{
+    
+    color: var(--white);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--white);
+}
+
+.Track-Crypto-heading:hover{
+    color: var(--black);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--white);
+    transition: all 0.3s;
+}
+
+
+.Real-Time-heading{
+ 
+    color: var(--blue);
+}
+
+.info-text{
+    font-size: 1rem;
+    color: var(--grey);
+}
+
+.btn-flx{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+
+.RightImageComponent{
+    display: flex;
+    width: 50%;
+    position: relative;
+}
+
+.iphone{
+    position: absolute;
+    z-index: 1;
+    height: 80vh;
+    margin-left: 10rem;
+    
+}
+
+.gradiant{
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+    height: 65vh;
+    margin-left: 10rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .InfoComponent{
+        flex-direction: column;
+    }
+    .iphone{
+        top: 3rem;
+        left: -70%;    
+    }
+    .gradiant{
+        top: 8rem;
+        left: -40%;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 530px) {
+
+
+
+  }

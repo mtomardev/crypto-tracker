@@ -1,16 +1,14 @@
-import './styles.css'
 import React from 'react'
 import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
-
-function BackToTop() {
-
-let mybutton = document.getElementById("myBtn");
+import "./styles.css"
+const BackToTop = () => {
+    let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "flex";
   } else {
     mybutton.style.display = "none";
@@ -24,8 +22,8 @@ function topFunction() {
 }
 
   return (
-    <div className='back-to-top-btn'id='myBtn' onClick={()=> topFunction()}>
-      <ArrowUpwardRoundedIcon style={{color:"var(--blue)"}}/>
+    <div className='back-to-top-btn' id='myBtn' onClick={()=>topFunction()}>
+        <ArrowUpwardRoundedIcon style={{color:"var(--blue)"}}/>
     </div>
   )
 }
