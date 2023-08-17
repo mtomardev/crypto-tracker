@@ -6,14 +6,10 @@ import iphone from "../../../assets/iphone.png";
 import gradient from "../../../assets/gradient.png";
 import {motion} from "framer-motion"
 import { Link } from "react-router-dom";
-import ShareComponent from "../ShareComponent";
+import ShareDrawer from "./ShareDrawer";
+import Footer from "../../Common/Footer";
 
-
-const LandingPage = () =>{
-    const [open, setOpen] = useState(false)
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-    
+const LandingPage = () =>{    
     return(
         <div className="InfoComponent">
             <div className="leftComponent">
@@ -39,11 +35,7 @@ const LandingPage = () =>{
                     <Button text={"Dashboard"}/>
                 </Link>
                 
-                
-                <Button text={"Share"} outline={true} onClick={handleOpen} />
-                <ShareComponent open={open} 
-                       handleOpen={handleOpen} 
-                       handleClose={handleClose}/>
+                <ShareDrawer/>
                 </div>
             </div>
 
@@ -60,7 +52,13 @@ const LandingPage = () =>{
                     />
                 <img className="gradiant" src={gradient} alt="crypro"/>
             </div>
+        
+
+        <div>
+            </div>           
+
         </div>
+    
     )
 }
 

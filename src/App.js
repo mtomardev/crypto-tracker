@@ -7,6 +7,7 @@ import CoinPage from "./pages/Coin";
 import ComparePage from "./pages/ComparePage";
 import Watchlist from "./pages/Watchlist";
 
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
         <Route path="/watchlist" element={<Watchlist />} />
       </Routes>
       </BrowserRouter>
+      
     </div>
   );
 }

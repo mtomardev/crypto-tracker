@@ -29,3 +29,12 @@
     margin: 1.5rem;
     gap: 2rem;
 }
+
+.content-container{
+    min-height: calc(100vh - 10px);
+}
+
+
+  
+
+  

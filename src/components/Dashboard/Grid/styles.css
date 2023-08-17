@@ -32,7 +32,7 @@
   }
   .coin-symbol {
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--coinsymbol);
     font-weight: 600;
     font-size: 1.2rem;
     margin: 0;

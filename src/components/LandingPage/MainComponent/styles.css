@@ -82,4 +82,8 @@
   }
 
 
-  
+  .share-drawer-div{
+    display: flex;
+    justify-content: center;
+    
+}

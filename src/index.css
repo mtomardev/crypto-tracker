@@ -2,7 +2,16 @@
 
 :root {
   --bg: #25003E;
-  --headerbg : #2b2a33;
+  --btn: #8000D7;
+  --btnborder: #1b1b1b;
+  --headerbg : #150223;
+  --footerbg : #8000D7;
+  --coinInfoHeading : #ebeaea; 
+  --coinInfoDes : #ebeaea;
+  --listRowBg: rgba(21, 2, 35, 0.2);
+  --coinsymbol : #ebeaea;
+
+
   --purple : #8000D7;
   --darkpurple: #150223;
   --white: #fff;
@@ -13,7 +22,18 @@
   --green: #61c96f;
   --red: #f94141;
 }
+
 [data-theme="light"] {
+  --bg: #e2dee4;
+  --btn:#ff5c35;
+  --btnborder: #ff5c35;
+  --headerbg : #f9f8fa;
+  --footerbg : #abc9e4;
+  --coinInfoHeading : #ebeaea; 
+  --coinInfoDes : #ebeaea; 
+  --listRowBg: #1e0032;
+
+  --purple : #8000D7;
   --white: #111;
   --black:  #fff;
   --blue: #3a80e9;
@@ -22,10 +42,7 @@
   --green: #43c655;
   --red: #f94141;
 }
-/* *{
-  
-  transition:  all .3s ease-in-out;
-} */
+
 html{
   scroll-behavior: smooth;
 }
@@ -93,3 +110,4 @@ height: 2.5rem !important;
     padding: 7px !important;
 }
 }
+
