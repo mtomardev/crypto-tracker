@@ -1,5 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+.dark-theme{
+  --bg: #25003E;
+  --btn: #8000D7;
+  --btnborder: #1b1b1b;
+  --headerbg : #150223;
+  --footerbg : #8000D7;
+  --coinInfoHeading : #ebeaea; 
+  --coinInfoDes : #ebeaea;
+  --listRowBg: rgba(21, 2, 35, 0.2);
+  --coinsymbol : #ebeaea;
+
+
+  --purple : #8000D7;
+  --darkpurple: #150223;
+  --white: #fff;
+  --black: #111;
+  --blue: #3a80e9;
+  --grey: #888;
+  --darkgrey: #1b1b1b;
+  --green: #61c96f;
+  --red: #f94141;
+}
+
+.light-theme{
+  --bg: #e2dee4;
+  --btn:#ff5c35;
+  --btnborder: #ff5c35;
+  --headerbg : #abc9e4;
+  --footerbg : #abc9e4;
+  --coinInfoHeading : #ebeaea; 
+  --coinInfoDes : #ebeaea; 
+  --listRowBg: #1e0032;
+
+  --purple : #8000D7;
+  --white: #111;
+  --black:  #fff;
+  --blue: #3a80e9;
+  --grey: #888;
+  --darkgrey: #1e0032;
+  --green: #43c655;
+  --red: #f94141;
+}
+
 :root {
   --bg: #25003E;
   --btn: #8000D7;
@@ -27,7 +70,7 @@
   --bg: #e2dee4;
   --btn:#ff5c35;
   --btnborder: #ff5c35;
-  --headerbg : #f9f8fa;
+  --headerbg : #f8f9fa;
   --footerbg : #abc9e4;
   --coinInfoHeading : #ebeaea; 
   --coinInfoDes : #ebeaea; 

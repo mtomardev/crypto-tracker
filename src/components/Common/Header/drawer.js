@@ -4,6 +4,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
 import DarkMode from "./../DarkMode/DarkMode";
+import Mode from "../Mode";
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = useState(false);
@@ -27,7 +28,8 @@ export default function TemporaryDrawer() {
           <Link to="/dashboard">
             <p className="link">Dashboard</p>
           </Link>
-          <DarkMode />
+          {/* <DarkMode /> */}
+          <Mode/>
         </div>
       </Drawer>
     </div>

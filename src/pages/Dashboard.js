@@ -50,7 +50,7 @@ const DashboardPage = () => {
   }
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <BackToTop />
       {isLoading ? (
         <Loader />

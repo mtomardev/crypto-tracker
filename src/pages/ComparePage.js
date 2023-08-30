@@ -87,7 +87,7 @@ const ComparePage = () => {
   };
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       {isLoading ? (
         <Loader />
       ) : (

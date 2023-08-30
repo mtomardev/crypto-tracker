@@ -4,6 +4,7 @@ import TemporaryDrawer from './drawer';
 import Button from './../Button/index';
 import "./styles.css"
 import DarkMode from './../DarkMode/DarkMode';
+import Mode from '../Mode';
 
 const Header = () => {
   return (
@@ -13,7 +14,8 @@ const Header = () => {
         <span style={{ color: "var(--blue)" }}>.</span>
       </h1>
       <div className='links'>
-      <DarkMode/>
+      {/* <DarkMode/> */}
+      <Mode/>
         <Link to="/">
           <p className='link'>Home</p>
         </Link>

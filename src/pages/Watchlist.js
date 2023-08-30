@@ -29,7 +29,7 @@ function Watchlist() {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       {watchlist?.length > 0 ? (
         <>
          <TabsComponent coins={coins} />

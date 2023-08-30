@@ -6,12 +6,15 @@ import DashboardPage from "./pages/Dashboard";
 import CoinPage from "./pages/Coin";
 import ComparePage from "./pages/ComparePage";
 import Watchlist from "./pages/Watchlist";
+import Header from "./components/Common/Header";
 
 
 function App() {
   return (
     <div className="App">
+      
       <BrowserRouter>
+      <Header/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<DashboardPage />} />

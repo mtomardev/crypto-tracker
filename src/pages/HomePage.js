@@ -11,7 +11,7 @@ const HomePage = () => {
     <div>
     
     <div className="content-container"> 
-      <Header />
+      {/* <Header /> */}
       <MainComponent />
     </div>
     <div className="footer--pin">
